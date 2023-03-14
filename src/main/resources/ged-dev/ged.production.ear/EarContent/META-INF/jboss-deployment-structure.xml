@@ -1,0 +1,37 @@
+<jboss-deployment-structure>
+	<deployment>
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</deployment>
+	<sub-deployment name="ged.entrant.ejb.indexation.jar">
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</sub-deployment>
+	<sub-deployment name="ged.entrant.ejb.common.jar">
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</sub-deployment>
+	<sub-deployment name="ged.entrant.web.interrogation.war">
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</sub-deployment>
+	<sub-deployment name="ged.entrant.ejb.integration.jar">
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</sub-deployment>
+	<sub-deployment name="ged.entrant.ejb.interrogation.jar">
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</sub-deployment>
+	<sub-deployment name="ged.entrant.rest.interrogation.war">
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+	</sub-deployment>
+</jboss-deployment-structure>

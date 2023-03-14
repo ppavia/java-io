@@ -1,0 +1,4 @@
+@Library('Lib@trunk') _
+
+
+mavenFlow app: "ged", env : "release"

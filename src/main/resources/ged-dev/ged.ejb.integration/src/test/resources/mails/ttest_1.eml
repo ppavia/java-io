@@ -1,0 +1,374 @@
+Received: from mcip-exch-01.ad-cimut.priv (10.73.1.11) by
+ mcip-exch-01.ad-cimut.priv (10.73.1.11) with Microsoft SMTP Server (TLS) id
+ 15.0.1156.6 via Mailbox Transport; Wed, 24 Feb 2016 12:07:55 +0100
+Received: from mcip-exch-01.ad-cimut.priv (10.73.1.11) by
+ mcip-exch-01.ad-cimut.priv (10.73.1.11) with Microsoft SMTP Server (TLS) id
+ 15.0.1156.6; Wed, 24 Feb 2016 12:07:55 +0100
+Received: from mcin.ad-cimut.priv (133.10.29.29) by mcip-exch-01.ad-cimut.priv
+ (10.73.1.11) with Microsoft SMTP Server (TLS) id 15.0.1156.6 via Frontend
+ Transport; Wed, 24 Feb 2016 12:07:55 +0100
+Received: from antispam.cimut.fr (192.168.150.13) by mcin.ad-cimut.priv
+ (133.10.29.29) with Microsoft SMTP Server id 8.3.406.0; Wed, 24 Feb 2016
+ 12:10:59 +0100
+Received: from MX41260.humanis.com (webmail.ac.humanis.com [195.101.214.84])
+	by antispam.cimut.fr  with ESMTP id u1OB7spm011155-u1OB7spn011155	for
+ <contact@mbamutuelle.com>; Wed, 24 Feb 2016 12:07:54 +0100
+Resent-Date: Wed, 24 Feb 2016 12:07:54 +0100
+Resent-Message-ID: <201602241107.u1OB7spm011155-u1OB7spn011155@antispam.cimut.fr>
+X-IronPort-AV: E=Sophos;i="5.22,493,1449529200"; 
+   d="scan'208,217";a="43707202"
+Content-Type: multipart/mixed;
+	boundary="===============6018784052201105130=="
+Received: from smbach02.groupapri.com ([10.241.21.45])  by MX41260.humanis.com
+ with ESMTP/TLS/AES128-SHA; 24 Feb 2016 12:07:54 +0100
+Resent-From: <Mba@radiancehumanis.com>
+Received: from MX41260.humanis.com (195.101.214.84) by SMBACH02.groupapri.com
+ (10.241.21.46) with Microsoft SMTP Server (TLS) id 14.3.235.1; Wed, 24 Feb
+ 2016 12:07:54 +0100
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: A0EFOAD4jc1Wbkxm5dVeBhgEBgMBAQECBwECAoIyawMwbap2iHULh1GBFAcSBQELhWqBfBABAQEBAQEBAw4NFQhQBIMmLBgoEAEtIQYTIwEIDlpAHROHQWEBCbUghQeDQgwegwWBY4MWhR6BRgEBSoIbC0AYgQ8FgRgShCWIE4klgRuBCoMzhHlZL4ZWhiKEAo17gQWEEGmGL4ExAQEB
+X-IPAS-Result: A0EFOAD4jc1Wbkxm5dVeBhgEBgMBAQECBwECAoIyawMwbap2iHULh1GBFAcSBQELhWqBfBABAQEBAQEBAw4NFQhQBIMmLBgoEAEtIQYTIwEIDlpAHROHQWEBCbUghQeDQgwegwWBY4MWhR6BRgEBSoIbC0AYgQ8FgRgShCWIE4klgRuBCoMzhHlZL4ZWhiKEAo17gQWEEGmGL4ExAQEB
+X-IronPort-AV: E=Sophos;i="5.22,493,1449529200"; 
+   d="scan'208,217";a="43707201"
+Received: from riskassur-hebdo.org (HELO RISKASSURWIN.home) ([213.229.102.76])
+  by MX41260.humanis.com with ESMTP; 24 Feb 2016 12:07:53 +0100
+Received: from riskassurwin ([213.229.102.76]) by home with MailEnable ESMTP;
+ Wed, 24 Feb 2016 12:03:57 +0100
+Message-ID: <ACAECD7F-121E-48E4-8EFC-47163E98EEBE@riskassur-hebdo.com>
+Reply-To: webmaster <webmaster@riskassur-hebdo.com>
+From: RiskAssur-hebdo: le magazine des Risques et des Assurances
+	<webmaster@riskassur-hebdo.com>;
+To: MALA RADIANCE <mala@radiance.fr>
+Subject: Les comparateurs d'assurance actuels ... ont-il un avenir ?
+Date: Wed, 24 Feb 2016 12:03:57 +0100
+X-Mailer: m  ampa ne11h23m55
+List-Unsubscribe: <http://www.urldestination.net/dg/unsuscribe.php?a=webmaster@riskassur-hebdo.com&b=frtracking@power-emailer.com&c=0&d=9af3bf738effff05b306fa938f80b752>
+Return-Path: mba@radiancehumanis.com
+X-MS-Exchange-Organization-Network-Message-Id: 3da95786-8b57-486f-46cb-08d33d0abedc
+X-MS-Exchange-ABP-GUID: 55e9b12a-33fb-4e23-a5f8-d16b81eb99b8
+X-MS-Exchange-Organization-AuthSource: mcin.ad-cimut.priv
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--===============6018784052201105130==
+Content-Type: multipart/alternative;
+	boundary="------------000403020401030604060200"
+Content-Transfer-Encoding: 8Bit
+
+--------------000403020401030604060200
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8Bit
+
+L'avenir des comparateurs d'assurance
+RiskAssur : le magazine des Risques et des Assurances
+ 
+
+Madame, Monsieur,
+J'ai le plaisir de vous proposer la prospective : "l'avenir des comparateurs d'assurance".
+A qui est destiné cet ouvrage ? 
+- A ceux qui ont la responsabilté d'un comparateur d'assurances
+- A ceux qui travaillent avec un ou des comparateurs
+- A ceux qui sont attentif à leur monde et qui veulent savoir pourquoi, en l'état, les comparateurs n'ont aucune chance de survivre 
+L'objectif de cette prospective est d'imaginer comment les comparateurs d'assurances pourraient évoluer ces prochaines années.
+Aujourd'hui, les comparateurs d'assurances permettent, dans de nombreux domaines (assurance auto, moto, habitation, santé, ?) de comparer des contrats d'assurances pour permettre à l'internaute d'avoir une vision du marché et, s'il le désire, de souscrire en ligne ou bien d'être mis en relation avec un intermédiaire d'assurances (normalement proche de son domicile).
+Parce que le secteur de l'assurance est réglementé, les sociétés ouvrant des comparateurs d'assurances sur internet sont des intermédiaires d'assurances, des Courtiers d'Assurances.
+Le marché est - aujourd'hui - porteur, il y a de plus en plus de sites de comparaison d'assurances.
+Pour autant, pour faire sa place, ce n'est pas uniquement une question d'argent, la preuve, la puissante société Google, a dû, quelques mois après avoir lancé un comparateur d'assurance en France, le fermer !
+Évidemment, ces sites ne proposent pas de comparer TOUS les contrats disponibles de tous les assureurs, mais uniquement une comparaison des compagnies avec lesquelles ils ont passé des accords.
+C'est un marché jeune, qui se cherche, qui doit prendre ses marques.
+L'objet de ce dossier est d'imaginer, ce que pourrait être les comparateurs dans quelques années, tant sur le plan de la forme que du fond.
+Et de s'interroger sur l'avenir des actuels comparateurs et du risque, qu'ils ont de se faire suplanter - rapidement - par de nouveaux arrivant.
+Cette prospective est volontairement synthétique, (32 pages, imprimés en format A4), car elle contient un condensé d'idées, abordant de manière très pointue cet unique sujet « l'avenir des comparateurs d'assurances ».
+Exclusivement disponible sur RiskAssur-boutique en version :
+- imprimée pour 380 euros TTC (tva à 5,5%) : 
+http://riskassur-boutique.com/prospective/16-prospective-l-avenir-des-comparateurs-d-assurances.html
+- en version numérique PDF pour 259 euros TTC (tva à 20%) : 
+http://riskassur-boutique.com/prospective/121-procompd.html
+En espérant que cette prospective retiendra votre attention.
+Bien cordialement,
+Olivier Kauf
+
+ 
+
+ 
+
+RiskAssur
+33 rue Galilée
+75116 Paris 
+Site : https://www.riskassur-hebdo.com
+mail : webmaster@riskassur.com
+
+message envoyé à : mala@radiance.fr
+Si ce message vous a importuné, faite "répondre" et inscivrez NON sur la ligne objet. Vous en recevrez plus aucun courrier de notre part.
+________________________________________
+Conformément à l'article 34 de la loi Informatique et Liberté du 6 janvier 1978,
+vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant.
+Pour exercer ce droit envoyez-nous un mail à l'adresse webmaster@riskassur-hebdo.com en précisant l'adresse mail à laquelle vous avez reçu ce message.
+
+--------------000403020401030604060200
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 8Bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>Email template By Adobe Dreamweaver CC</title><!-- meta charset="UTF-8" -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients --><!-- When use in Email please remove all comments as it is removed by Email clients--><!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+<style type="text/css">
+body {
+	margin: 0;
+}
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: Merienda, 'Times New Roman', serif;
+	font-style: normal;
+	font-weight: 400;
+}
+button{
+	width:90%;
+}
+@media screen and (max-width:600px) {
+/*styling for objects with screen size less than 600px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: Merienda, 'Times New Roman', serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100%;
+}
+.footer {
+	/* Footer has 2 columns each of 48% width */
+	height: auto !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+table.responsiveImage {
+	/* Container for images in catalog */
+	height: auto !important;
+	max-width: 30% !important;
+	width: 30% !important;
+}
+table.responsiveContent {
+	/* Content that accompanies the content in the catalog */
+	height: auto !important;
+	max-width: 66% !important;
+	width: 66% !important;
+}
+.top {
+	/* Each Columnar table in the header */
+	height: auto !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+
+}
+@media screen and (max-width:480px) {
+/*styling for objects with screen size less than 480px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: Merienda, 'Times New Roman', serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100% !important;
+	border-style: none !important;
+}
+.footer {
+	/* Each footer column in this case should occupy 96% width  and 4% is allowed for email client padding*/
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveImage {
+	/* Container for each image now specifying full width */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveContent {
+	/* Content in catalog  occupying full width of cell */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.top {
+	/* Header columns occupying full width */
+	height: auto !important;
+	max-width: 100% !important;
+	width: 100% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+button{
+	width:90%!important;
+}
+}
+.LienPub {	color: #800000;
+}
+.LienPub {	font-family: MS Serif, New York, serif;
+}
+.LienPub {	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+.question {	font-family: Verdana, Geneva, sans-serif;
+}
+.question {	color: #000081;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.LienArt {	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	background-color: #FFF;
+}
+.Verda10 {	font-size: 10px;
+}
+</style>
+</head>
+<body yahoo="yahoo">
+<table cellspacing="0" cellpadding="0" width="100%">
+
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0" width="600" align="center"><!-- Main Wrapper Table with initial width set to 60opx -->
+
+<tr><!-- Introduction area -->
+<td>
+<table cellspacing="0" cellpadding="0" width="96%" align="left">
+
+<tr><!-- row container for TITLE/EMAIL THEME -->
+<td style="FONT-SIZE: 32px; FONT-FAMILY: Merienda, 'Times New Roman', serif, sans-serif; FONT-WEIGHT: 300; COLOR: #929292; LINE-HEIGHT: 2.5em" align="center">
+<p>L'avenir des comparateurs d'assurance</p></td></tr>
+<tr><!-- row container for Tagline -->
+<td style="FONT-SIZE: 16px; FONT-FAMILY: Merienda, 'Times New Roman', serif, sans-serif; FONT-WEIGHT: 300; COLOR: #929292" align="center">RiskAssur : le magazine des Risques et des Assurances</td></tr>
+<tr>
+<td style="FONT-SIZE: 0px; LINE-HEIGHT: 0" height="20">
+<table cellspacing="0" cellpadding="0" width="96%" align="left">
+
+<tr><!-- HTML Spacer row -->
+<td style="FONT-SIZE: 0px; LINE-HEIGHT: 0" height="20">&nbsp;</td></tr></table></td></tr>
+<tr><!-- Row container for Intro/ Description -->
+<td style="FONT-SIZE: 14px; FONT-FAMILY: Merienda, 'Times New Roman', serif, sans-serif; FONT-WEIGHT: 100; COLOR: #929292; PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: justify; PADDING-TOP: 10px; PADDING-LEFT: 20px; LINE-HEIGHT: 1.8; PADDING-RIGHT: 20px" align="left">
+<p class="question">Madame, Monsieur,</p>
+<p class="question">J'ai le plaisir de vous proposer la prospective : &quot;l'avenir des comparateurs d'assurance&quot;.</p>
+<p class="question">A qui est destiné cet ouvrage ? <br>- A ceux qui ont la responsabilté d'un comparateur d'assurances<br>- A ceux qui travaillent avec un ou des comparateurs<br>- A ceux qui sont attentif à leur monde et qui veulent savoir pourquoi, en l'état, les comparateurs n'ont aucune chance de survivre </p>
+<p class="question">L'objectif de cette prospective est d'imaginer comment les comparateurs d'assurances pourraient évoluer ces prochaines années.</p>
+<p class="question">Aujourd'hui, les comparateurs d'assurances permettent, dans de nombreux domaines (assurance auto, moto, habitation, santé, ?) de comparer des contrats d'assurances pour permettre à l'internaute d'avoir une vision du marché et, s'il le désire, de souscrire en ligne ou bien d'être mis en relation avec un intermédiaire d'assurances (normalement proche de son domicile).</p>
+<p class="question">Parce que le secteur de l'assurance est réglementé, les sociétés ouvrant des comparateurs d'assurances sur internet sont des intermédiaires d'assurances, des Courtiers d'Assurances.</p>
+<p class="question">Le marché est - aujourd'hui - porteur, il y a de plus en plus de sites de comparaison d'assurances.</p>
+<p class="question">Pour autant, pour faire sa place, ce n'est pas uniquement une question d'argent, la preuve, la puissante société Google, a dû, quelques mois après avoir lancé un comparateur d'assurance en France, le fermer !</p>
+<p class="question">Évidemment, ces sites ne proposent pas de comparer TOUS les contrats disponibles de tous les assureurs, mais uniquement une comparaison des compagnies avec lesquelles ils ont passé des accords.</p>
+<p class="question">C'est un marché jeune, qui se cherche, qui doit prendre ses marques.</p>
+<p class="question">L'objet de ce dossier est d'imaginer, ce que pourrait être les comparateurs dans quelques années, tant sur le plan de la forme que du fond.</p>
+<p class="question">Et de s'interroger sur l'avenir des actuels comparateurs et du risque, qu'ils ont de se faire suplanter - rapidement - par de nouveaux arrivant.</p>
+<p class="question">Cette prospective est volontairement synthétique, (32 pages, imprimés en format A4), car elle contient un condensé d'idées, abordant de manière très pointue cet unique sujet « l'avenir des comparateurs d'assurances ».</p>
+<p class="question">Exclusivement disponible sur RiskAssur-boutique en version :</p>
+<p class="question"><strong>- imprimée pour 380 euros TTC (tva à 5,5%) : <br></strong><a href="http://riskassur-boutique.com/prospective/16-prospective-l-avenir-des-comparateurs-d-assurances.html"><strong>http://riskassur-boutique.com/prospective/16-prospective-l-avenir-des-comparateurs-d-assurances.html</strong></a></p>
+<p class="question"><strong>- en version numérique PDF pour 259 euros TTC (tva à 20%) : <br></strong><a href="http://riskassur-boutique.com/prospective/121-procompd.html"><strong>http://riskassur-boutique.com/prospective/121-procompd.html</strong></a></p>
+<p class="question">En espérant que cette prospective retiendra votre attention.</p>
+<p class="question">Bien cordialement,</p>
+<p class="question">Olivier Kauf</p></td></tr></table></td></tr>
+<tr><!-- HTML Spacer row -->
+<td style="FONT-SIZE: 0px; LINE-HEIGHT: 0" height="10">
+<table cellspacing="0" cellpadding="0" width="96%" align="left">
+
+<tr>
+<td style="FONT-SIZE: 0px; LINE-HEIGHT: 0" height="20">&nbsp;</td></tr></table></td></tr>
+<tr><!-- HTML spacer row -->
+<td style="FONT-SIZE: 0px; LINE-HEIGHT: 0" height="20">
+<table cellspacing="0" cellpadding="0" width="96%" align="left">
+
+<tr>
+<td style="FONT-SIZE: 0px; LINE-HEIGHT: 0" height="20">
+<p class="LienArt" align="left">&nbsp;</p></td></tr></table></td></tr>
+<tr bgcolor="#d0cfcf">
+<td>
+<table class="footer" cellspacing="0" cellpadding="0" width="48%" align="left"><!-- First column of footer content -->
+
+<tr>
+<td>
+<p style="FONT-SIZE: 22px; FONT-FAMILY: Merienda, 'Times New Roman', serif, sans-serif; FONT-WEIGHT: 300; COLOR: #929292; LINE-HEIGHT: 2.5em" align="center">RiskAssur<br>33 rue Galilée<br>75116 Paris </p></td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0" width="48%" align="left"><!-- Second column of footer content -->
+
+<tr>
+<td height="185">
+<p>Site : <a href="https://www.riskassur-hebdo.com">https://www.riskassur-hebdo.com</a></p>
+<p>mail : <a href="mailto:webmaster@riskassur.com">webmaster@riskassur.com</a></p></td></tr></table></td></tr>
+<tr bgcolor="#d0cfcf">
+<td valign="top">
+<p align="left"><span style="FONT-SIZE: 12px; FONT-FAMILY: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; FONT-STYLE: normal">message envoyé à : mala@radiance.fr</span></p>
+<p align="left"><span style="FONT-SIZE: 12px; FONT-FAMILY: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; FONT-STYLE: normal">Si ce message vous a importuné, faite &quot;répondre&quot; et inscivrez NON sur la ligne objet. Vous en recevrez plus aucun courrier de notre part.</span></p>
+<p align="center">________________________________________<br><span style="FONT-SIZE: 10px; FONT-FAMILY: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; FONT-STYLE: normal">Conformément à l'article 34 de la loi Informatique et Liberté du 6 janvier 1978,<br>vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant.<br>Pour exercer ce droit envoyez-nous un mail à l'adresse webmaster@riskassur-hebdo.com en précisant l'adresse mail à laquelle vous avez reçu ce message.</span></span></p></td></tr></table></td></tr></table></body></html>
+
+--------------000403020401030604060200--
+
+--===============6018784052201105130==
+Content-Type: multipart/alternative;
+	boundary="===============3191392874249699236=="
+Content-Disposition: inline
+
+--===============3191392874249699236==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+***************************************************************************=
+*******************************
+
+Les informations contenues dans ce courrier =C3=A9lectronique et dans toute=
+s les pi=C3=A8ces qui y sont jointes (Ci-apr=C3=A8s d=C3=A9nomm=C3=A9s glob=
+alement =C2=AB le message =C2=BB) sont strictement confidentielles.
+
+Si vous recevez ce message par erreur, nous vous remercions de le renvoyer =
+=C3=A0 son =C3=A9metteur. En tout =C3=A9tat de cause, vous n=E2=80=99=C3=AA=
+tes pas autoris=C3=A9s =C3=A0 le copier, =C3=A0 le transmettre ou le divulg=
+uer, sous peine de poursuites civiles et / ou p=C3=A9nales.
+
+Nous alertons les destinataires de ce message que celui-ci ne fait l=E2=80=
+=99objet d=E2=80=99aucun proc=C3=A9d=C3=A9 technique conforme au d=C3=A9cre=
+t 2001-272 du 30/03/2001 pris pour l=E2=80=99application de l=E2=80=99artic=
+le 1316-4 du code civil fran=C3=A7ais, permettant de garantir son authentic=
+it=C3=A9 et son int=C3=A9gralit=C3=A9. En cons=C3=A9quence, RADIANCE Groupe=
+ HUMANIS d=C3=A9cline toute responsabilit=C3=A9 se rapportant =C3=A0 une =
+=C3=A9ventuelle alt=C3=A9ration, modification ou falsification du message.
+
+Seuls les =C3=A9crits papier comportant la signature d=E2=80=99une personne=
+ habilit=C3=A9e de RADIANCE Groupe HUMANIS peuvent engager les organismes a=
+ssureurs qui en sont membres et servir de preuve.
+
+***************************************************************************=
+*************************=
+
+--===============3191392874249699236==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<br><div><p>***************************************************************=
+*******************************************</p><p>Les informations contenue=
+s dans ce courrier =C3=A9lectronique et dans toutes les pi=C3=A8ces qui y s=
+ont jointes (Ci-apr=C3=A8s d=C3=A9nomm=C3=A9s globalement =C2=AB le message=
+ =C2=BB) sont strictement confidentielles.</p><p>Si vous recevez ce message=
+ par erreur, nous vous remercions de le renvoyer =C3=A0 son =C3=A9metteur. =
+En tout =C3=A9tat de cause, vous n=E2=80=99=C3=AAtes pas autoris=C3=A9s =C3=
+=A0 le copier, =C3=A0 le transmettre ou le divulguer, sous peine de poursui=
+tes civiles et / ou p=C3=A9nales.</p><p>Nous alertons les destinataires de =
+ce message que celui-ci ne fait l=E2=80=99objet d=E2=80=99aucun proc=C3=A9d=
+=C3=A9 technique conforme au d=C3=A9cret 2001-272 du 30/03/2001 pris pour l=
+=E2=80=99application de l=E2=80=99article 1316-4 du code civil fran=C3=A7ai=
+s, permettant de garantir son authenticit=C3=A9 et son int=C3=A9gralit=C3=
+=A9. En cons=C3=A9quence, RADIANCE Groupe HUMANIS d=C3=A9cline toute respon=
+sabilit=C3=A9 se rapportant =C3=A0 une =C3=A9ventuelle alt=C3=A9ration, mod=
+ification ou falsification du message.</p><p>Seuls les =C3=A9crits papier c=
+omportant la signature d=E2=80=99une personne habilit=C3=A9e de RADIANCE Gr=
+oupe HUMANIS peuvent engager les organismes assureurs qui en sont membres e=
+t servir de preuve.</p><p>*************************************************=
+***************************************************</p>=
+
+--===============3191392874249699236==--
+
+--===============6018784052201105130==--

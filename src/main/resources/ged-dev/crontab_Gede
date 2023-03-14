@@ -1,0 +1,9 @@
+#CRONTAB ROOT - relance instance
+#restart quotidien de la gede  pour pallier au problème de stop de l'integration des mails entrants
+45 3 * * * /etc/init.d/jboss_prod restart
+
+
+#CRONTAB CIMUT - TEST DE VIE en prod
+# test de vie de l'intégration des mails entrants toutes les heures du lundi au vendredi de 9h à 18h : en cas d'erreur la gede elle même s'occupe de lever une alerte
+# mis en place le 20/03 pour être alerté de l'arret du pooler non expliqué sur l'année 2018/2019 alors que l'appli gede tourne toujours
+00 9-19 * * 1-5 echo -e "\n\n$(date) test de vie intégration gede mail :  "  >> /appli/cimut/inst_jboss_prod/log/testVieGedeMail && curl http://lcip-gede.cimut.fr:8180/gede/test >> /appli/cimut/inst_jboss_prod/log/testVieGedeMail

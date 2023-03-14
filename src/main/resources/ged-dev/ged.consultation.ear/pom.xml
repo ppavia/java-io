@@ -1,0 +1,173 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<groupId>fr.cimut.ged.entrant</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>ged.consultation.ear</artifactId>
+	<packaging>ear</packaging>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>ged.ejb.common</artifactId>
+			<version>${project.parent.version}</version>
+			<type>ejb</type>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>ged.ejb.interrogation</artifactId>
+			<version>${project.parent.version}</version>
+			<type>ejb</type>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>ged.rest.interrogation</artifactId>
+			<version>${project.parent.version}</version>
+			<type>war</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.cimut.starweb</groupId>
+			<artifactId>cimut-mos</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.mail</groupId>
+					<artifactId>mail</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.mail</groupId>
+					<artifactId>javax.mail</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-javamail_1.4_spec</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jongo</groupId>
+			<artifactId>jongo</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+
+
+			<plugin>
+				<groupId>com.smartbear.soapui</groupId>
+				<artifactId>soapui-maven-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+
+			<!-- deploy de la gede consultation mvn jboss-as:redeploy -->
+			<plugin>
+				<groupId>org.jboss.as.plugins</groupId>
+				<artifactId>jboss-as-maven-plugin</artifactId>
+				<version>7.9.Final</version>
+				<executions>
+					<execution>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<force>true</force>
+					<hostname>lcid-gedoc-cons-01.cimut.fr</hostname>
+					<port>9999</port>
+					<username>cimut</username>
+					<password>Quimper29</password>
+					<timeout>30000</timeout>
+					<filename>ged.consultation.ear.ear</filename>
+				</configuration>
+			</plugin>
+
+
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<applicationName>${project.artifactId}</applicationName>
+					<finalName>${project.artifactId}</finalName>
+					<earSourceDirectory>EarContent</earSourceDirectory>
+					<generateApplicationXml>true</generateApplicationXml>
+					<version>6</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<modules>
+
+						<ejbModule>
+							<groupId>${project.parent.groupId}</groupId>
+							<artifactId>ged.ejb.interrogation</artifactId>
+							<bundleFileName>ged.entrant.ejb.interrogation.jar</bundleFileName>
+						</ejbModule>
+
+						<ejbModule>
+							<groupId>${project.parent.groupId}</groupId>
+							<artifactId>ged.ejb.common</artifactId>
+							<bundleFileName>ged.entrant.ejb.common.jar</bundleFileName>
+						</ejbModule>
+
+						<webModule>
+							<groupId>${project.parent.groupId}</groupId>
+							<artifactId>ged.rest.interrogation</artifactId>
+							<bundleFileName>ged.entrant.rest.interrogation.war</bundleFileName>
+							<contextRoot>/gede</contextRoot>
+						</webModule>
+
+					</modules>
+					<archive>
+						<manifestEntries>
+							<Info-Name>${project.artifactId}</Info-Name>
+							<Info-Vendor>${project.groupId}</Info-Vendor>
+							<Info-Version>${project.version}</Info-Version>
+							<build-number>${buildJenkinsNumber}</build-number>
+							<svn-source>${svnSource}</svn-source>
+							<svn-revision>${svnRevision}</svn-revision>
+							<Info-Environment>${envName}</Info-Environment>
+							<Info-GenereLe>${maven.build.timestamp}</Info-GenereLe>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

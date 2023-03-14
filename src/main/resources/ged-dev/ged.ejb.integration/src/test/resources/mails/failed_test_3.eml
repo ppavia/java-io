@@ -1,0 +1,297 @@
+Received: from mcip-exch-01.ad-cimut.priv (10.73.1.11) by
+ mcip-exch-01.ad-cimut.priv (10.73.1.11) with Microsoft SMTP Server (TLS) id
+ 15.0.1156.6 via Mailbox Transport; Mon, 7 Mar 2016 15:34:04 +0100
+Received: from mcip-exch-01.ad-cimut.priv (10.73.1.11) by
+ mcip-exch-01.ad-cimut.priv (10.73.1.11) with Microsoft SMTP Server (TLS) id
+ 15.0.1156.6; Mon, 7 Mar 2016 15:34:04 +0100
+Received: from mcin.ad-cimut.priv (133.10.29.29) by mcip-exch-01.ad-cimut.priv
+ (10.73.1.11) with Microsoft SMTP Server (TLS) id 15.0.1156.6 via Frontend
+ Transport; Mon, 7 Mar 2016 15:34:04 +0100
+Received: from antispam.cimut.fr (192.168.150.13) by mcin.ad-cimut.priv
+ (133.10.29.29) with Microsoft SMTP Server id 8.3.406.0; Mon, 7 Mar 2016
+ 15:34:04 +0100
+Received: from MX41260.humanis.com (marky.apri-group.com [195.101.214.84])	by
+ antispam.cimut.fr  with ESMTP id u27EXscZ028682-u27EXsca028682	for
+ <contact@mbamutuelle.com>; Mon, 7 Mar 2016 15:33:54 +0100
+Resent-Date: Mon, 7 Mar 2016 15:33:54 +0100
+Resent-Message-ID: <201603071433.u27EXscZ028682-u27EXsca028682@antispam.cimut.fr>
+X-IronPort-AV: E=Sophos;i="5.22,551,1449529200"; 
+   d="scan'208,217";a="44555771"
+Content-Type: multipart/mixed;
+	boundary="===============8999291131296507536=="
+Received: from smbach02.groupapri.com ([10.241.21.45])  by MX41260.humanis.com
+ with ESMTP/TLS/AES128-SHA; 07 Mar 2016 15:33:54 +0100
+Resent-From: <mba@radiancehumanis.com>
+Received: from MX41260.humanis.com (195.101.214.84) by SMBACH02.groupapri.com
+ (10.241.21.46) with Microsoft SMTP Server (TLS) id 14.3.235.1; Mon, 7 Mar
+ 2016 15:33:54 +0100
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: A0EeAQBCkN1Wlm0AL2hcHQcBCAECAgkBAQEBgi8hfW0GvDGGDwKBZBABAQEBAQEBAw4BAQEBBw0JCSEkC4I3ODwBAQEBAQEjAjQ7AwwGARoTAQE4EQFtEyYBBBsah2sDEgEDAaIBAYEnARxhBSgCimiFKAEEhV8YhDwBCwEXBo8OgyuBD41tiTcLFpxRjlU3giEegVBqiD8BfQEBAQ
+X-IPAS-Result: A0EeAQBCkN1Wlm0AL2hcHQcBCAECAgkBAQEBgi8hfW0GvDGGDwKBZBABAQEBAQEBAw4BAQEBBw0JCSEkC4I3ODwBAQEBAQEjAjQ7AwwGARoTAQE4EQFtEyYBBBsah2sDEgEDAaIBAYEnARxhBSgCimiFKAEEhV8YhDwBCwEXBo8OgyuBD41tiTcLFpxRjlU3giEegVBqiD8BfQEBAQ
+X-IronPort-AV: E=Sophos;i="5.22,551,1449529200"; 
+   d="scan'208,217";a="44555770"
+Received: from mail-he1eur01on0109.outbound.protection.outlook.com (HELO
+ EUR01-HE1-obe.outbound.protection.outlook.com) ([104.47.0.109])  by
+ MX41260.humanis.com with ESMTP/TLS/AES256-SHA; 07 Mar 2016 15:33:53 +0100
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=gecconseil.onmicrosoft.com; s=selector1-gec-expert;
+ h=From:To:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=T0/I2CUQgxPNjsT8UU25/hiLV0G9ci0ddS6tylTKkKw=;
+ b=0skp0Ht8KugmIVQeLaQeueZAQQKN6zz8NV0pkwdyhoF/fge3uGwRxW0qs7dadtuGCnK7gL0wSIiqlcVjrt2kJmVBC8lNLrnOJuhksq1BL+EfDS70xsedIewXEwuUX2YQ1OxFjGbTHrUznLklAnML+Of/wAmoURb+5I7/Zn+s8x4=
+Received: from AM3PR07MB0598.eurprd07.prod.outlook.com
+ (2a01:111:e400:8836::11) by AM3PR07MB0598.eurprd07.prod.outlook.com
+ (2a01:111:e400:8836::11) with Microsoft SMTP Server (TLS) id 15.1.434.11;
+ Mon, 7 Mar 2016 14:33:51 +0000
+Received: from AM3PR07MB0598.eurprd07.prod.outlook.com
+ ([fe80::2e:877e:cc3e:a83c]) by AM3PR07MB0598.eurprd07.prod.outlook.com
+ ([fe80::2e:877e:cc3e:a83c%14]) with mapi id 15.01.0434.014; Mon, 7 Mar 2016
+ 14:33:51 +0000
+From: ANDRIEUX Chantal <candrieux@gec.expert>
+To: "mba@radiancehumanis.com" <mba@radiancehumanis.com>
+Subject: =?iso-8859-1?Q?demande_de_transformation_contrat_sant=E9_en_contrat_Madel?=
+ =?iso-8859-1?Q?in?=
+Thread-Topic: =?iso-8859-1?Q?demande_de_transformation_contrat_sant=E9_en_contrat_Madel?=
+ =?iso-8859-1?Q?in?=
+Thread-Index: AdF4fdj9ac8wBgHuQK6hTk/QEXEuLQ==
+Date: Mon, 7 Mar 2016 14:33:51 +0000
+Message-ID: <AM3PR07MB0598B56F59CC5E3D4DED81F5C0B10@AM3PR07MB0598.eurprd07.prod.outlook.com>
+Accept-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: radiancehumanis.com; dkim=none (message not signed)
+ header.d=none;radiancehumanis.com; dmarc=none action=none
+ header.from=gec.expert;
+x-originating-ip: [37.71.17.74]
+x-ms-office365-filtering-correlation-id: a3c9951c-c8e6-4f62-794f-08d346958106
+x-microsoft-exchange-diagnostics: 1;AM3PR07MB0598;5:GIfQXniMpqoClH1xTVwO/f+KX5LzV2ospTO2JK6+TzLv1OYTYTsKu2e5kMS9FC2SWqwgr+SZBeVgNZkYbvvhf3k7RkSpnHUKtajj6epmzq05l+oZIqOn+8f7fE6OctHjrScXscXExWJUc9gwPNFtFw==;24:9T2m5lQDDAs/eK+AOPOfZEPeDcAdJ1nF6X4NXmQzJu7+tgC8rxFoO1Qcf/gcPj1uhs7wKQgcbRE0XUu8hQ0QEQA9KZW6J1Lt3AXbCWo/5s0=
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:;SRVR:AM3PR07MB0598;
+x-microsoft-antispam-prvs: <AM3PR07MB05983224413A9DAC3BBAAA11C0B10@AM3PR07MB0598.eurprd07.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:;
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(601004)(2401047)(5005006)(8121501046)(10201501046)(3002001);SRVR:AM3PR07MB0598;BCL:0;PCL:0;RULEID:;SRVR:AM3PR07MB0598;
+x-forefront-prvs: 087474FBFA
+x-forefront-antispam-report: SFV:NSPM;SFS:(10019020)(6009001)(86362001)(110136002)(107886002)(450100001)(189998001)(19625215002)(16236675004)(40100003)(81166005)(19300405004)(33656002)(5008740100001)(54356999)(19580395003)(1220700001)(5004730100002)(66066001)(87936001)(15975445007)(1730700002)(2501003)(1096002)(586003)(5003600100002)(5002640100001)(3846002)(102836003)(790700001)(6116002)(3280700002)(229853001)(2351001)(3660700001)(224303003)(2906002)(2900100001)(5250100002)(11100500001)(50986999)(76576001)(74316001)(92566002)(46492002);DIR:OUT;SFP:1102;SCL:1;SRVR:AM3PR07MB0598;H:AM3PR07MB0598.eurprd07.prod.outlook.com;FPR:;SPF:None;MLV:sfv;LANG:fr;
+spamdiagnosticoutput: 1:23
+spamdiagnosticmetadata: NSPM
+X-MS-Exchange-CrossTenant-originalarrivaltime: 07 Mar 2016 14:33:51.6409
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: bb988aa8-dace-4a26-95aa-c7a9c514a38e
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM3PR07MB0598
+Return-Path: mba@radiancehumanis.com
+X-MS-Exchange-Organization-Network-Message-Id: e2f07a29-ba22-463c-4eda-08d3469588ad
+X-MS-Exchange-ABP-GUID: 55e9b12a-33fb-4e23-a5f8-d16b81eb99b8
+X-MS-Exchange-Organization-AuthSource: mcin.ad-cimut.priv
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--===============8999291131296507536==
+Content-Language: fr-FR
+Content-Type: multipart/alternative;
+	boundary="_000_AM3PR07MB0598B56F59CC5E3D4DED81F5C0B10AM3PR07MB0598eurp_"
+
+--_000_AM3PR07MB0598B56F59CC5E3D4DED81F5C0B10AM3PR07MB0598eurp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+MR LAPOUGE JEAN PAUL
+LA HAUTE FAYETTE
+16320 EDON
+
+R=E9f=E9rence :11790779-LAPOUGE J PAUL
+N=B0S.S.162121601509507
+
+                Mesdames ,Messieurs
+
+
+                Apr=E8s v=E9rification aupr=E8s de votre organisme ,je me s=
+uis aper=E7u que mon contrat N=B0898648 ENERGIE SANTE n'=E9tait pas d=E9duc=
+tible au sein de mon entreprise.
+
+                Je vous demande de transformer ce dernier en contrat de typ=
+e loi Madelin afin de b=E9n=E9ficier de la d=E9ductibilit=E9 sur mes b=E9n=
+=E9fices industriels et commerciaux.
+
+                Restant =E0 votre disposition,
+
+                Je vous prie d'agr=E9er mes salutations distingu=E9es.
+
+
+                                                                           =
+                   JEAN PAUL LAPOUGE
+
+
+
+
+--_000_AM3PR07MB0598B56F59CC5E3D4DED81F5C0B10AM3PR07MB0598eurp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"FR" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">MR LAPOUGE JEAN PAUL<o:p></o:p></p>
+<p class=3D"MsoNormal">LA HAUTE FAYETTE<o:p></o:p></p>
+<p class=3D"MsoNormal">16320 EDON<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">R=E9f=E9rence&nbsp;:11790779-LAPOUGE J PAUL<o:p></o:=
+p></p>
+<p class=3D"MsoNormal">N=B0S.S.162121601509507<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mesdames ,Messieurs<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apr=E8s v=E9rification aupr=E8s de v=
+otre organisme ,je me suis aper=E7u que mon contrat N=B0898648 ENERGIE SANT=
+E n&#8217;=E9tait pas d=E9ductible au sein de mon entreprise.<o:p></o:p></p=
+>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Je vous demande de transformer ce de=
+rnier en contrat de type loi Madelin afin de b=E9n=E9ficier de la d=E9ducti=
+bilit=E9 sur mes b=E9n=E9fices industriels et commerciaux.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Restant =E0 votre disposition,<o:p><=
+/o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Je vous prie d&#8217;agr=E9er mes sa=
+lutations distingu=E9es.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JEAN PAUL LAPOUGE<=
+o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_AM3PR07MB0598B56F59CC5E3D4DED81F5C0B10AM3PR07MB0598eurp_--
+
+--===============8999291131296507536==
+Content-Type: multipart/alternative;
+	boundary="===============2076567111011036643=="
+Content-Disposition: inline
+
+--===============2076567111011036643==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+***************************************************************************=
+*******************************
+
+Les informations contenues dans ce courrier =C3=A9lectronique et dans toute=
+s les pi=C3=A8ces qui y sont jointes (Ci-apr=C3=A8s d=C3=A9nomm=C3=A9s glob=
+alement =C2=AB le message =C2=BB) sont strictement confidentielles.
+
+Si vous recevez ce message par erreur, nous vous remercions de le renvoyer =
+=C3=A0 son =C3=A9metteur. En tout =C3=A9tat de cause, vous n=E2=80=99=C3=AA=
+tes pas autoris=C3=A9s =C3=A0 le copier, =C3=A0 le transmettre ou le divulg=
+uer, sous peine de poursuites civiles et / ou p=C3=A9nales.
+
+Nous alertons les destinataires de ce message que celui-ci ne fait l=E2=80=
+=99objet d=E2=80=99aucun proc=C3=A9d=C3=A9 technique conforme au d=C3=A9cre=
+t 2001-272 du 30/03/2001 pris pour l=E2=80=99application de l=E2=80=99artic=
+le 1316-4 du code civil fran=C3=A7ais, permettant de garantir son authentic=
+it=C3=A9 et son int=C3=A9gralit=C3=A9. En cons=C3=A9quence, RADIANCE Groupe=
+ HUMANIS d=C3=A9cline toute responsabilit=C3=A9 se rapportant =C3=A0 une =
+=C3=A9ventuelle alt=C3=A9ration, modification ou falsification du message.
+
+Seuls les =C3=A9crits papier comportant la signature d=E2=80=99une personne=
+ habilit=C3=A9e de RADIANCE Groupe HUMANIS peuvent engager les organismes a=
+ssureurs qui en sont membres et servir de preuve.
+
+***************************************************************************=
+*************************=
+
+--===============2076567111011036643==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<br><div><p>***************************************************************=
+*******************************************</p><p>Les informations contenue=
+s dans ce courrier =C3=A9lectronique et dans toutes les pi=C3=A8ces qui y s=
+ont jointes (Ci-apr=C3=A8s d=C3=A9nomm=C3=A9s globalement =C2=AB le message=
+ =C2=BB) sont strictement confidentielles.</p><p>Si vous recevez ce message=
+ par erreur, nous vous remercions de le renvoyer =C3=A0 son =C3=A9metteur. =
+En tout =C3=A9tat de cause, vous n=E2=80=99=C3=AAtes pas autoris=C3=A9s =C3=
+=A0 le copier, =C3=A0 le transmettre ou le divulguer, sous peine de poursui=
+tes civiles et / ou p=C3=A9nales.</p><p>Nous alertons les destinataires de =
+ce message que celui-ci ne fait l=E2=80=99objet d=E2=80=99aucun proc=C3=A9d=
+=C3=A9 technique conforme au d=C3=A9cret 2001-272 du 30/03/2001 pris pour l=
+=E2=80=99application de l=E2=80=99article 1316-4 du code civil fran=C3=A7ai=
+s, permettant de garantir son authenticit=C3=A9 et son int=C3=A9gralit=C3=
+=A9. En cons=C3=A9quence, RADIANCE Groupe HUMANIS d=C3=A9cline toute respon=
+sabilit=C3=A9 se rapportant =C3=A0 une =C3=A9ventuelle alt=C3=A9ration, mod=
+ification ou falsification du message.</p><p>Seuls les =C3=A9crits papier c=
+omportant la signature d=E2=80=99une personne habilit=C3=A9e de RADIANCE Gr=
+oupe HUMANIS peuvent engager les organismes assureurs qui en sont membres e=
+t servir de preuve.</p><p>*************************************************=
+***************************************************</p>=
+
+--===============2076567111011036643==--
+
+--===============8999291131296507536==--

@@ -1,0 +1,65 @@
+Received: from mcip-exch-02.ad-cimut.priv (10.73.1.12) by
+ mcip-exch-01.ad-cimut.priv (10.73.1.11) with Microsoft SMTP Server (TLS) id
+ 15.0.1156.6 via Mailbox Transport; Wed, 27 Jan 2016 13:47:55 +0100
+Received: from mcip-exch-02.ad-cimut.priv (10.73.1.12) by
+ mcip-exch-02.ad-cimut.priv (10.73.1.12) with Microsoft SMTP Server (TLS) id
+ 15.0.1156.6; Wed, 27 Jan 2016 13:47:55 +0100
+Received: from mcin.ad-cimut.priv (133.10.29.29) by mcip-exch-02.ad-cimut.priv
+ (10.73.1.12) with Microsoft SMTP Server (TLS) id 15.0.1156.6 via Frontend
+ Transport; Wed, 27 Jan 2016 13:47:55 +0100
+Received: from antispam.cimut.fr (192.168.150.13) by mcin.ad-cimut.priv
+ (133.10.29.29) with Microsoft SMTP Server id 8.3.406.0; Wed, 27 Jan 2016
+ 13:47:55 +0100
+Received: from smtp.orpea.net (smtp.orpea.net [62.23.37.168])	by
+ antispam.cimut.fr  with ESMTP id u0RClpUc017829-u0RClpUd017829	for
+ <contact@mbamutuelle.com>; Wed, 27 Jan 2016 13:47:51 +0100
+Received: from srv_exchange.orpea.net ([192.168.0.18])  by smtp.orpea.net with
+ SMTP; 27 Jan 2016 13:47:48 +0100
+Received: from FR-SRV-EXCHC01.fr.orpea.net ([172.16.31.11]) by
+ srv_exchange.orpea.net with Microsoft SMTPSVC(6.0.3790.1830);	 Wed, 27 Jan
+ 2016 13:47:48 +0100
+Received: from FR-SRV-EXCH02.fr.orpea.net ([fe80::1875:53e4:a17f:53ec]) by
+ fr-srv-exchc01 ([172.16.31.11]) with mapi id 14.03.0174.001; Wed, 27 Jan 2016
+ 13:47:48 +0100
+From: CLINEA277 - Accueil <accueil.cardiocean@orpea.net>
+To: "contact@mbamutuelle.com" <contact@mbamutuelle.com>
+CC: CLINEA277 - Corinne CLARAC <c.clarac@orpea.net>
+Subject:
+Thread-Index: AdFZAOyhSNMDrhAwQX2at+vTTvKq8A==
+Date: Wed, 27 Jan 2016 12:47:47 +0000
+Message-ID: <EF69EE19599698489DF2C77B2F34AFC0019688594A@FR-SRV-EXCH02.fr.orpea.net>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [172.18.0.13]
+Content-Type: text/plain; charset="gb2312"
+Content-Transfer-Encoding: base64
+X-OriginalArrivalTime: 27 Jan 2016 12:47:48.0757 (UTC) FILETIME=[ED5C3450:01D15900]
+Return-Path: accueil.cardiocean@orpea.net
+X-MS-Exchange-Organization-Network-Message-Id: 7ccd5331-19ec-415a-0174-08d32718139a
+X-MS-Exchange-ABP-GUID: d72325bc-80d9-46d6-b55e-8a439585744b
+X-MS-Exchange-Organization-AuthSource: mcin.ad-cimut.priv
+X-MS-Exchange-Organization-AuthAs: Anonymous
+Importance: high
+X-Priority: 1
+MIME-Version: 1.0
+
+Q0xJTklRVUUgQ0FSRElPQ0VBTg0KDQoyNSBhbGyopmUgZGUgbGEgVG91cnRpbGyoqHJlDQoNCjE3
+MTM4IFBVSUxCT1JFQVUNCg0KRmF4IDA1IDQ2IDY4IDQ3IDk5DQoNCm1haWyhoSA6IGMuY2xhcmFj
+QG9ycGVhLm5ldDxtYWlsdG86Yy5jbGFyYWNAb3JwZWEubmV0Pg0KDQoNCg0KTUJBIE11dHVlbGxl
+DQoNCiBTZXJ2aWNlIFKopnNpbGlhdGlvbg0KDQo1IGJvdWxldmFyZCBkZSBsYSBMYXR0cmUgZGUg
+VGFzc2lnbnkNCg0KMzUwMDAgUkVOTkVTDQoNCg0KDQoNCg0KTGlzdGUgZGVzIGFkaKimcmVudHMN
+Cg0KQ0xBUkFDLUJPVVJMT1QgQ09SSU5ORSAxNDg3MjANCg0KSEVFTlMgTUFSSUUgSk9TRSAxNDg5
+NjANCg0KVE9VTExFQyBOQVRIQUxJRSAxNDk0MjcNCg0KQ09VRkxFQVVYIENIUklTVEVMTEUgMTQ4
+NzM5DQoNCkdBSUxMQVJEIFBBVFJJQ0lBIDE0ODg2OQ0KDQoNCg0KUHVpbGJvcmVhdSBsZSAyNyAw
+MSAxNg0KDQqhoQ0KDQqhoQ0KDQpNYWRhbWUgTW9uc2lldXIsDQoNCg0KDQpKZSB2b3VzIHByaWUg
+ZGUgdHJvdXZlciBjaS1qb2ludCBsYSBsaXN0ZSBkZXMgc2FsYXJpqKZzIGRldmFudCByqKZzaWxp
+ZXIgbGV1ciBjb250cmF0IGRlIGNvbXBsqKZtZW50YWlyZSBkZSBzYW50qKYgYXVwcqiocyBkZSB2
+b3RyZSBvcmdhbmlzbWUgc3VpdGUgqKQgbGEgc291c2NyaXB0aW9uIG9ibGlnYXRvaXJlIGQndW5l
+IGNvbXBsqKZtZW50YWlyZSBlbnRyZXByaXNlIKikIGNvbXB0ZXIgZHUgMDEgMDEgMTYuDQoNCk5v
+dXMgdm91cyByZW1lcmNpb25zIGRlIGJpZW4gdm91bG9pciBhZHJlc3NlciBwb3VyIGNoYXF1ZSBh
+ZGiopnJlbnQgKGxpc3RlIGNpLWRlc3N1cykgdW4gY2VydGlmaWNhdCBhdHRlc3RhbnQgbGUgcqio
+Z2xlbWVudCBkZSBsJ6imY2iopmFuY2UgZGUgamFudmllciAyMDE2IGF1cHKoqHMgZGUgdm90cmUg
+b3JnYW5pc21lLg0KDQpOb3VzIHZvdXMgcmVtZXJjaW9ucyBkZSBjZSBxdWUgdm91cyBmZXJleiwN
+Cg0KDQoNCkNvcmRpYWxlbWVudA0K
