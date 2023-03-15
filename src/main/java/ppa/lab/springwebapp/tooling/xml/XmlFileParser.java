@@ -2,7 +2,6 @@ package ppa.lab.springwebapp.tooling.xml;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -24,7 +23,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-@Service
 public class XmlFileParser {
     private static final Logger LOG = LoggerFactory.getLogger(XmlFileParser.class);
 
@@ -59,18 +57,19 @@ public class XmlFileParser {
         String errorMsg = "Impossible de parser le fichier xml : %s".formatted(xml.getName());
         try {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            dbf.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
             DocumentBuilder db;
             db = dbf.newDocumentBuilder();
-            Map<String, String> xmlDataMap = new HashMap<String, String>();
+            Map<String, String> xmlDataMap = new HashMap<>();
             Document document = db.parse(xml);
 
             Element node = document.getDocumentElement();
             for (int s = 0; s < node.getChildNodes().getLength(); s++) {
-
                 Node fstNode = ((NodeList) node).item(s);
                 if (fstNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element fstElmnt = (Element) fstNode;
-                    xmlDataMap.put(fstElmnt.getNodeName(), fstElmnt.getTextContent());					}
+                    xmlDataMap.put(fstElmnt.getNodeName(), fstElmnt.getTextContent());
+                }
             }
             return xmlDataMap;
 
@@ -81,6 +80,5 @@ public class XmlFileParser {
         } catch (IOException e) {
             throw new TechnicalException(errorMsg, "IOException", e);
         }
-
     }
 }

@@ -3,7 +3,6 @@ package ppa.lab.springwebapp.model.dto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ppa.lab.springwebapp.tooling.crypto.Signature;
-import ppa.lab.springwebapp.tooling.xml.XmlFileParser;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -17,12 +16,12 @@ public class FileDto {
 
     private final Signature signature = new Signature();
 
-    private String pathName;
+    private String rootPath;
 
     private Map<String, Path> regularFiles = new HashMap<>();
 
     public FileDto(String rootPathName, List<Path> paths) {
-        this.pathName = rootPathName;
+        this.rootPath = rootPathName;
         setChecksumFile(paths);
     }
 
@@ -36,12 +35,12 @@ public class FileDto {
         });
     }
 
-    public String getPathName() {
-        return pathName;
+    public String getRootPath() {
+        return rootPath;
     }
 
-    public void setPathName(String pathName) {
-        this.pathName = pathName;
+    public void setRootPath(String rootPath) {
+        this.rootPath = rootPath;
     }
 
     public Map<String, Path> getRegularFiles() {
@@ -55,7 +54,7 @@ public class FileDto {
     @Override
     public String toString() {
         return "FileDto{" +
-                "pathName='" + pathName + '\'' +
+                "pathName='" + rootPath + '\'' +
                 ", regularFiles=" + regularFiles +
                 '}';
     }

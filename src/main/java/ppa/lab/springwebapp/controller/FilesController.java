@@ -8,54 +8,34 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ppa.lab.springwebapp.exception.RestException;
+import ppa.lab.springwebapp.exception.ServiceException;
 import ppa.lab.springwebapp.model.dto.FileDto;
 import ppa.lab.springwebapp.model.dto.RestResponse;
-import ppa.lab.springwebapp.tooling.xml.XmlFileParser;
+import ppa.lab.springwebapp.model.mock.FileMock;
+import ppa.lab.springwebapp.service.api.FileService;
 import ppa.lab.springwebapp.utils.HttpResponseUtil;
-
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Path;
-import java.util.List;
 
 @RestController
 @RequestMapping("/files")
 public class FilesController {
 
-    private final XmlFileParser xmlFileParser;
+    private final FileService fileService;
 
-    public FilesController(XmlFileParser xmlFileParser) {
-        this.xmlFileParser = xmlFileParser;
+    public FilesController(FileService fileService) {
+        this.fileService = fileService;
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<RestResponse<FileDto>> files(
             HttpServletRequest request
     ) throws RestException {
-        List<Path> paths = null;
         FileDto fileDto = null;
         try {
-            String rootPath = getFilePathesTest();
-            paths = xmlFileParser.loadXmlFiles(rootPath);
-            fileDto = new FileDto(rootPath, paths);
-        } catch (IOException e) {
+            String rootPath = FileMock.getFilePathsTest();
+            fileDto = fileService.loadFiles(rootPath);
+        } catch (ServiceException e) {
             throw new RestException(e.getMessage(), HttpStatus.NOT_FOUND, e);
         }
         return HttpResponseUtil.buildRestResponse(fileDto, HttpStatus.OK.name(), request.getRequestURI());
-    }
-
-    private String getFilePathesTest() throws IOException {
-        ClassLoader classLoader = getClass().getClassLoader();
-        String xmlPathName = "filestest";
-        URL resource = classLoader.getResource(xmlPathName);
-        if (resource == null) {
-            throw new IllegalArgumentException("file not found! %s".formatted(xmlPathName));
-        }
-        try {
-            return resource.toURI().getPath();
-        } catch (URISyntaxException e) {
-            throw new IOException(e);
-        }
     }
 }
