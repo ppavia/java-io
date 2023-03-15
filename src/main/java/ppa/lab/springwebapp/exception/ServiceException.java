@@ -1,10 +1,11 @@
 package ppa.lab.springwebapp.exception;
 
 public class ServiceException extends Exception {
-    private String errorCode;
+    private final String errorCode;
+    private static final String DEFAULT_ERROR_CODE = "-1";
 
     public ServiceException(final String message, final String errorCode, final Throwable cause) {
-        super(message);
+        super(message, cause);
         this.errorCode = errorCode;
     }
 
@@ -15,6 +16,7 @@ public class ServiceException extends Exception {
 
     public ServiceException(final String message) {
         super(message);
+        this.errorCode = DEFAULT_ERROR_CODE;
     }
 
     public ServiceException(final Throwable cause) {
@@ -23,13 +25,11 @@ public class ServiceException extends Exception {
 
     public ServiceException(final String message, final Throwable cause) {
         super(message, cause);
+        this.errorCode = DEFAULT_ERROR_CODE;
     }
 
     public String getErrorCode() {
         return errorCode;
     }
 
-    public void setErrorCode(String errorCode) {
-        this.errorCode = errorCode;
-    }
 }

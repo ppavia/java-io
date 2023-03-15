@@ -34,44 +34,40 @@ public class DatasourceProxyConfig implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(final Object bean, final String beanName) throws BeansException {
-        if (bean instanceof DataSource) {
+        if (bean instanceof DataSource datasource) {
             if (LOG.isDebugEnabled()) {
                 LOG.debug("DEBUGGING DATA SOURCE : {}", () -> beanName);
             }
-            ProxyFactory factory = new ProxyFactory(bean);
+            ProxyFactory factory = new ProxyFactory(datasource);
             factory.setProxyTargetClass(true);
-            factory.addAdvice(new ProxyDataSourceInterceptor((DataSource) bean));
+            factory.addAdvice(new ProxyDataSourceInterceptor(datasource));
             return factory.getProxy();
         }
         return bean;
     }
 
-    private static class ProxyDataSourceInterceptor implements MethodInterceptor {
-        private final DataSource dataSource;
-
-        public ProxyDataSourceInterceptor(final DataSource dataSource) {
-            DefaultQueryLogEntryCreator creator = new DefaultQueryLogEntryCreator();
-            creator.setMultiline(true);
-            SystemOutQueryLoggingListener listener = new SystemOutQueryLoggingListener();
-            listener.setQueryLogEntryCreator(creator);
-            this.dataSource = ProxyDataSourceBuilder
-                    .create(dataSource)
-                    .countQuery()
-                    .multiline()
-                    .listener(listener)
-  //                  .logQueryToSysOut()
-                    .logQueryBySlf4j(SLF4JLogLevel.DEBUG)
-                    .asJson()
-                    .build();
-        }
-
-        @Override
-        public Object invoke(final MethodInvocation invocation) throws Throwable {
-            Method proxyMethod = ReflectionUtils.findMethod(dataSource.getClass(), invocation.getMethod().getName());
-            if (proxyMethod != null) {
-                return proxyMethod.invoke(dataSource, invocation.getArguments());
+    private record ProxyDataSourceInterceptor(DataSource dataSource) implements MethodInterceptor {
+            private ProxyDataSourceInterceptor(final DataSource dataSource) {
+                DefaultQueryLogEntryCreator creator = new DefaultQueryLogEntryCreator();
+                creator.setMultiline(true);
+                SystemOutQueryLoggingListener listener = new SystemOutQueryLoggingListener();
+                listener.setQueryLogEntryCreator(creator);
+                this.dataSource = ProxyDataSourceBuilder.create(dataSource)
+                        .countQuery()
+                        .multiline()
+                        .listener(listener)
+                        //                  .logQueryToSysOut()
+                        .logQueryBySlf4j(SLF4JLogLevel.DEBUG)
+                        .asJson()
+                        .build();
             }
-            return invocation.proceed();
+
+            @Override public Object invoke(final MethodInvocation invocation) throws Throwable {
+                Method proxyMethod = ReflectionUtils.findMethod(dataSource.getClass(), invocation.getMethod().getName());
+                if (proxyMethod != null) {
+                    return proxyMethod.invoke(dataSource, invocation.getArguments());
+                }
+                return invocation.proceed();
+            }
         }
-    }
 }

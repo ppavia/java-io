@@ -9,18 +9,19 @@ import java.time.LocalDateTime;
 
 public class HttpResponseUtil {
 
+    private HttpResponseUtil(){}
+
     public static <T> ResponseEntity<T> buildRestResponse(T response) {
         return ResponseEntity.ok()
                 .headers(setContentTypeJson(new HttpHeaders()))
                 .body(response);
     }
 
-    public static <T> ResponseEntity<RestResponse<T>> buildRestResponse(T response, String msg, String location, String reason) {
-        RestResponse responseBean = new RestResponse(
+    public static <T> ResponseEntity<RestResponse<T>> buildRestResponse(T response, String msg, String location) {
+        RestResponse<T> responseBean = new RestResponse<>(
                 LocalDateTime.now()
                 , msg
                 , location
-                , reason
                 , response);
         return ResponseEntity.ok()
                 .headers(setContentTypeJson(new HttpHeaders()))
@@ -34,7 +35,6 @@ public class HttpResponseUtil {
     }
 
     public static HttpHeaders setCrossDomain(HttpHeaders responseHeaders) {
-        ResponseEntity.HeadersBuilder response = ResponseEntity.noContent();
         responseHeaders.set("Access-Control-Allow-Methods", "POST, PUT, GET, OPTIONS, DELETE");
         responseHeaders.set("Access-Control-Max-Age", "3600");
         responseHeaders.set("Access-Control-Allow-Headers",

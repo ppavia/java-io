@@ -22,7 +22,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/person")
 public class PersonController {
-    private static final Logger LOG = LoggerFactory.getLogger(PersonController.class);
     private SimplePersonService simplePersonService;
 
     public PersonController(SimplePersonService simplePersonService) {
@@ -39,10 +38,9 @@ public class PersonController {
         try {
             simplePerson = simplePersonService.getSimplePerson(firstName, lastName);
         } catch (ServiceException e) {
-            LOG.error(e.getMessage(), e);
-            throw new RestException(e.getMessage(), HttpStatus.NOT_FOUND);
+            throw new RestException(e.getMessage(), HttpStatus.NOT_FOUND, e);
         }
-        return HttpResponseUtil.buildRestResponse(simplePerson, HttpStatus.OK.name(), request.getRequestURI(), "find person");
+        return HttpResponseUtil.buildRestResponse(simplePerson, HttpStatus.OK.name(), request.getRequestURI());
     }
 
     @GetMapping(value = "/{firstName}", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -54,10 +52,9 @@ public class PersonController {
         try {
             simplePersons = simplePersonService.getSimplePersons(firstName);
         } catch (ServiceException e) {
-            LOG.error(e.getMessage(), e);
-            throw new RestException(e.getMessage(), HttpStatus.NOT_FOUND);
+            throw new RestException(e.getMessage(), HttpStatus.NOT_FOUND, e);
         }
-        return HttpResponseUtil.buildRestResponse(simplePersons, HttpStatus.OK.name(), request.getRequestURI(), "find person");
+        return HttpResponseUtil.buildRestResponse(simplePersons, HttpStatus.OK.name(), request.getRequestURI());
     }
 
     @GetMapping(value = "/AV", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -70,8 +67,7 @@ public class PersonController {
         try {
             simplePerson = simplePersonService.getSimplePerson(firstName, lastName);
         } catch (ServiceException e) {
-            LOG.error(e.getMessage(), e);
-            throw new RestException(e.getMessage(), HttpStatus.NOT_FOUND);
+            throw new RestException(e.getMessage(), HttpStatus.NOT_FOUND, e);
         }
         return HttpResponseUtil.buildRestResponse(simplePerson);
     }

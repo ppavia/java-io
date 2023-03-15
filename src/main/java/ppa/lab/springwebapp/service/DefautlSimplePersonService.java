@@ -9,7 +9,6 @@ import ppa.spring.domain.bean.SimplePerson;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class DefautlSimplePersonService implements SimplePersonService {
@@ -39,8 +38,8 @@ public class DefautlSimplePersonService implements SimplePersonService {
     @Override public List<SimplePersonDto> getSimplePersons(String firstName) throws ServiceException {
         List<SimplePerson> simplePersons = simplePersonRepository.findByFirstName(firstName);
         return simplePersons.stream()
-                .map(simplePerson -> mapSimplePerson(simplePerson))
-                .collect(Collectors.toList());
+                .map(this::mapSimplePerson)
+                .toList();
     }
 
 

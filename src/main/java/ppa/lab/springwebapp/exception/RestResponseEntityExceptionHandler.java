@@ -1,5 +1,7 @@
 package ppa.lab.springwebapp.exception;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -12,7 +14,9 @@ import ppa.lab.springwebapp.model.dto.RestErrorResponse;
 import java.time.LocalDateTime;
 
 @ControllerAdvice
-public class RestResponseEntityExceptionHandler<T> extends ResponseEntityExceptionHandler {
+public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
+    private static final Logger LOG = LoggerFactory.getLogger(RestResponseEntityExceptionHandler.class);
+    private static final String DEFAULT_ERROR_MSG = "error from %s : %s";
 
     @ExceptionHandler(value = { RestException.class })
     protected ResponseEntity<RestErrorResponse> handleHttpException (RestException ex, WebRequest request) {
@@ -21,9 +25,10 @@ public class RestResponseEntityExceptionHandler<T> extends ResponseEntityExcepti
     }
 
     private RestErrorResponse buildErrorResponse(RestException ex, WebRequest request) {
-        ServletWebRequest servletWebRequest = null;
-        if (request instanceof ServletWebRequest) {
-            servletWebRequest = (ServletWebRequest) request;
+        if(LOG.isErrorEnabled()) {
+            LOG.error(DEFAULT_ERROR_MSG.formatted(request.getContextPath(), ex.getMessage()), ex);
+        }
+        if (request instanceof ServletWebRequest servletWebRequest) {
            return new RestErrorResponse(
                     LocalDateTime.now(),
                     Integer.toString(ex.getHttpStatus().value()),
@@ -38,7 +43,7 @@ public class RestResponseEntityExceptionHandler<T> extends ResponseEntityExcepti
                     HttpStatus.NOT_ACCEPTABLE.name(),
                     ex.getMessage(),
                     ex.getHttpStatus().getReasonPhrase(),
-                    servletWebRequest.getContextPath());
+                    request.getContextPath());
         }
     }
 }

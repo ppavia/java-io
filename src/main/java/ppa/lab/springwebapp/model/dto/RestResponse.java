@@ -2,19 +2,19 @@ package ppa.lab.springwebapp.model.dto;
 
 import java.time.LocalDateTime;
 
-public class RestResponse<T> extends AbstractRestReponse {
+public class RestResponse<T> implements AbstractRestReponse {
     private LocalDateTime timestamp;
     private String message;
     private String location;
     private T data;
 
-    public RestResponse(LocalDateTime timestamp, String message, String location, String reason) {
+    public RestResponse(LocalDateTime timestamp, String message, String location) {
         this.timestamp = timestamp;
         this.message = message;
         this.location = location;
     }
 
-    public RestResponse(LocalDateTime timestamp, String message, String location, String reason, T data) {
+    public RestResponse(LocalDateTime timestamp, String message, String location, T data) {
         this.timestamp = timestamp;
         this.message = message;
         this.location = location;

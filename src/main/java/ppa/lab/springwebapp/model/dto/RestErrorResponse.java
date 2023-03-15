@@ -2,7 +2,7 @@ package ppa.lab.springwebapp.model.dto;
 
 import java.time.LocalDateTime;
 
-public class RestErrorResponse extends AbstractRestReponse {
+public class RestErrorResponse implements AbstractRestReponse {
     private LocalDateTime timestamp;
     private String status;
     private String error;
