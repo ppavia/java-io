@@ -21,8 +21,8 @@ public class FileDto {
 
     private Map<String, Path> regularFiles = new HashMap<>();
 
-    public FileDto(String pathName, List<Path> paths) {
-        this.pathName = pathName;
+    public FileDto(String rootPathName, List<Path> paths) {
+        this.pathName = rootPathName;
         setChecksumFile(paths);
     }
 

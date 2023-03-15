@@ -3,14 +3,25 @@ package ppa.lab.springwebapp.tooling.xml;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+import ppa.lab.springwebapp.exception.TechnicalException;
 import ppa.lab.springwebapp.tooling.validation.XmlFileValidation;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 @Service
@@ -42,5 +53,34 @@ public class XmlFileParser {
             LOG.error(e.getMessage(), e);
         }
         return false;
+    }
+
+    public Map<String, String> readInputXmlFile(File xml) throws TechnicalException  {
+        String errorMsg = "Impossible de parser le fichier xml : %s".formatted(xml.getName());
+        try {
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db;
+            db = dbf.newDocumentBuilder();
+            Map<String, String> xmlDataMap = new HashMap<String, String>();
+            Document document = db.parse(xml);
+
+            Element node = document.getDocumentElement();
+            for (int s = 0; s < node.getChildNodes().getLength(); s++) {
+
+                Node fstNode = ((NodeList) node).item(s);
+                if (fstNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element fstElmnt = (Element) fstNode;
+                    xmlDataMap.put(fstElmnt.getNodeName(), fstElmnt.getTextContent());					}
+            }
+            return xmlDataMap;
+
+        } catch (ParserConfigurationException e) {
+            throw new TechnicalException(errorMsg, "ParserConfigurationException", e);
+        } catch (SAXException e) {
+            throw new TechnicalException(errorMsg, "SAXException", e);
+        } catch (IOException e) {
+            throw new TechnicalException(errorMsg, "IOException", e);
+        }
+
     }
 }
