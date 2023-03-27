@@ -1,19 +1,13 @@
 package ppa.lab.springwebapp.configuration;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import ppa.spring.domain.bean.SimplePerson;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@EnableJpaRepositories({"ppa.lab.springwebapp.model.repository"})
-@Import({ SimplePerson.class
-        , DatasourceProxyConfig.class})
-@ComponentScan(basePackages = {
-        "ppa.lab.springwebapp.model.repository"
-        , "ppa.lab.springwebapp.service"
-        , "ppa.spring.domain.bean"
-})
+@PropertySource({"classpath:persistence.properties"})
+@EntityScan(basePackages = {"ppa.spring.domain.bean"})
+@ComponentScan({"ppa.lab.springwebapp.configuration"})
 public class AppConfig {
 }
